@@ -37,19 +37,16 @@
 # secret_number = random.randint(1,10)
 #
 # print('I am thinking of a number between 1 and 10.')
-# num = int(input('What\'s the number? '))
 #
 # while True:
+#     num = int(input('What\'s the number? '))
 #     if num == secret_number:
 #         print('Yes! You Win!')
 #         break
 #     elif num < secret_number:
 #         print('{} is too low'.format(num))
-#         num = int(input('What\'s the number? '))
 #     elif num > secret_number:
 #         print('{} is too high'.format(num))
-#         num = int(input('What\'s the number? '))
-
 
 # #############################################################################
 # Step 4 & Bonus Limit Number of Guesses & Play Again
