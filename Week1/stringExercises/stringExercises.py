@@ -71,7 +71,6 @@ strList = []
 
 # 'z' == 122
 for letter in string:
-    print(ord(letter), letter)
     if (ord(letter)) == 32:
         strList.append(chr(ord(letter)))
         continue

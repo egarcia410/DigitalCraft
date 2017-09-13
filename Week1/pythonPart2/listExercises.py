@@ -65,7 +65,7 @@ numbers2 = [36, 24, -89, 63, 45, -12, 8, -77, 33, 4]
 
 # result = list(map(lambda i,j: i*j, numbers, numbers2))
 # print(result)
-
+#
 # result = []
 # for index, num in enumerate(numbers):
 #     result.append(num * numbers2[index])
