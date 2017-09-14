@@ -1,38 +1,37 @@
 import turtle
 
-def circle():
-    turtle.circle(100)
+def circle(s, m):
+    turtle.circle(100 * m)
 
-def triangle():
-    for num in range(0, 2):
-        turtle.forward(100)
+def triangle(s, m):
+    for num in range(0, 3):
+        turtle.forward(s * m)
         turtle.left(120)
-    turtle.forward(100)
 
-def hexagon():
+def hexagon(s, m):
     for num in range(0, 6):
-        turtle.forward(100)
+        turtle.forward(s * m)
         turtle.left(60)
 
-def octagon():
+def octagon(s, m):
     for num in range(0, 8):
-        turtle.forward(100)
+        turtle.forward(s * m)
         turtle.left(45)
 
-def pentagon():
+def pentagon(s, m):
     for num in range(0, 5):
-        turtle.forward(100)
+        turtle.forward(s * m)
         turtle.left(72)
 
-def square():
+def square(s, m):
     for num in range(0, 4):
-        turtle.forward(100)
+        turtle.forward(s * m)
         turtle.left(90)
 
-def star():
+def star(s, m):
     turtle.left(60)
     for num in range(0, 5):
-        turtle.forward(100)
+        turtle.forward(s * m)
         turtle.right(60)
-        turtle.forward(100)
+        turtle.forward(s *  m)
         turtle.left(132)

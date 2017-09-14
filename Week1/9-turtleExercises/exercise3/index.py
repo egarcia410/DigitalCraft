@@ -2,7 +2,7 @@ import shapes
 import turtle
 import random
 
-funcShapes =    [ shapes.circle,
+funcShapes = [ shapes.circle,
                 shapes.triangle,
                 shapes.hexagon,
                 shapes.octagon,
@@ -24,6 +24,8 @@ def runShapes():
         sh = random.randint(0, 360)
         spd = random.randint(0, 11)
         p = random.randint(0, 20)
+        multi = random.randint(1, 3)
+        size = random.randint(20, 50)
         turtle.Screen()
         turtle.bgcolor('blue')
         turtle.begin_fill()
@@ -36,7 +38,7 @@ def runShapes():
         turtle.penup()
         turtle.goto(pos(), pos())
         turtle.pendown()
-        func()
+        func(size, multi)
         turtle.end_fill()
     turtle.exitonclick()
 
