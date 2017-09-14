@@ -10,10 +10,17 @@ Add parameters into the various functions of your shapes module. Include:
 
 ### Getting started
 1. In terminal, clone repository
+
 `git clone https://github.com/egarcia410/digitalCraft.git`
+
 2. Change directory to exercise folder
+
 `cd digitalcraft/week1/9-turtleExercises/exercise3`
+
 3. Run program
+
 `python3 index.py`
+
 4. Results:
+
 ![alt text](./img/img1.png)
