@@ -30,13 +30,18 @@ Add parameters into the various functions of your shapes module. Include:
 1. size - the size of the shape
 2. fill - a bool specifying whether to fill or outline the shape
 3. color - the color of the shape.
+
 *Hint: you can use the color function to set both the pen color and the fill color.
+
 4. Make a new .py program that imports the shapes module and uses its functions to draw different shapes of various colors, fills, and sizes.
+
+![alt text](./img/img2.png)
+
 ### Exercise 4
 
 Draw a night sky full of stars of various sizes. *Hint: use bgcolor function to set the background color.
 
-![alt text](./img/img2.png)
+![alt text](./img/img3.png)
 
 ### Artistic Project 1
 
@@ -50,4 +55,4 @@ Draw an abstract design inspired by the artwork around the room. Use functions t
 
 Recreate the DigitalCrafts logo. Use functions to break down the design into several components.
 
-![alt text](./img/img3.png)
+![alt text](./img/img4.png)
