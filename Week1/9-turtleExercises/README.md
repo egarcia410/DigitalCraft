@@ -17,7 +17,11 @@ Draw these simple shapes (each in its own .py file):
 7. a circle
 ### Exercise 2
 
-Extract all the code for the shapes in exercise 1 into functions. Move them all into a single file called `shapes.py`. Write a new .py program that imports the shapes module and use its functions to draw all the available shapes onto the screen.
+Extract all the code for the shapes in exercise 1 into functions. Move them all
+into a single file called `shapes.py`. Write a new .py program that imports the
+shapes module and use its functions to draw all the available shapes onto the screen.
+
+![alt text](./img/img1)
 
 ### Exercise 3
 
@@ -32,6 +36,8 @@ Add parameters into the various functions of your shapes module. Include:
 
 Draw a night sky full of stars of various sizes. *Hint: use bgcolor function to set the background color.
 
+![alt text](./img/img2)
+
 ### Artistic Project 1
 
 Draw your own house, be detailed. Break down the components of the house such as door, window, roof, porch, etc into individual functions.
@@ -43,3 +49,5 @@ Draw an abstract design inspired by the artwork around the room. Use functions t
 ### or Artistic Project 3
 
 Recreate the DigitalCrafts logo. Use functions to break down the design into several components.
+
+![alt text](./img/img3)

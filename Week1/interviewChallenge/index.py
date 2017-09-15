@@ -43,26 +43,28 @@
 
 # 4 Prime Factors
 # NOT EFFICIENT
-# largestPrime = 0
-# for num in range(1, 5):
-#     for num2 in range(2, num + 1):
-#         if num % num2 == 0:
-#             if num2 != num:
-#                 break
-#             else:
-#                 largestPrime = num2
-# print(largestPrime)
+
+# def largestPrime():
+#     for num in range(600851475143, 0, -1):
+#         for num2 in range(600851475143, num):
+#             if num % num2 == 0:
+#                 if num2 != num:
+#                     break
+#                 else:
+#                     return largestPrime
+# print(largestPrime())
 
 # 5
 # primeCount = 0
 # prime = 1
-# while primeCount != 100:
+# while primeCount != 5:
+#     print(primeCount)
 #     for num in range(1, 100):
-#         primeCount += 1
 #         for num2 in range(2, num + 1):
 #             if num % num2 == 0:
 #                 if num2 != num:
 #                     break
 #                 else:
+#                     primeCount += 1
 #                     prime = num2
 # print(prime)
