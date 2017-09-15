@@ -1,5 +1,20 @@
 # Turtle Exercises
 
+### Prerequisites
+
+Install [Python](https://www.python.org/downloads/)
+
+### Getting Started
+
+1. In terminal, clone repository:
+`git clone https://github.com/egarcia410/digitalCraft.git`
+
+2. Change directory:
+`cd /digitalcraft/week1/9-turtleExercises`
+
+3. Run program:
+`python3 index.py`
+
 ### Exercise 0
 
 Follow the code exercise in the lecture/slides and make it run.
