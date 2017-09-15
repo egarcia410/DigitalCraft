@@ -21,7 +21,7 @@ Extract all the code for the shapes in exercise 1 into functions. Move them all
 into a single file called `shapes.py`. Write a new .py program that imports the
 shapes module and use its functions to draw all the available shapes onto the screen.
 
-![alt text](./img/img1)
+![alt text](./img/img1.png)
 
 ### Exercise 3
 
@@ -36,7 +36,7 @@ Add parameters into the various functions of your shapes module. Include:
 
 Draw a night sky full of stars of various sizes. *Hint: use bgcolor function to set the background color.
 
-![alt text](./img/img2)
+![alt text](./img/img2.png)
 
 ### Artistic Project 1
 
@@ -50,4 +50,4 @@ Draw an abstract design inspired by the artwork around the room. Use functions t
 
 Recreate the DigitalCrafts logo. Use functions to break down the design into several components.
 
-![alt text](./img/img3)
+![alt text](./img/img3.png)
