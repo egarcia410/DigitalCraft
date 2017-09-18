@@ -1,10 +1,8 @@
 import turtle
 
 # Centers logo to background
-# xShift = -187.5
-# yShift = 25
-xShift = -200
-yShift = 40
+xShift = -187.5
+yShift = 25
 
 def trapezoid():
     startPoint = [[0, 0], [270, 0], [105, 50], [375, 50]]
@@ -72,7 +70,7 @@ if __name__ == '__main__':
     # Big triangle - points, colors, lengths sides, angle
     bTPoints = [[119.5, 24.88], [142.00,63.85], [210.5, 25.12],
                 [164.5, 24.88], [255.5, 25.12], [233.00,-13.85]]
-    bTColors = ['#1B67A1', '#1F84B1', '#C08258', '#F27830', '#939597', '#6E6E71']
+    bTColors = ['#1B67A1', '#1F84B1', '#C08258', '#467866', '#939597', '#6E6E71']
     bTSides = 45
     bTAngles = [0, 240, 120]
     # Small triangle - points, colors, lengths sides, angle
