@@ -3,10 +3,15 @@
 ### Getting Started
 1. Install [Python](https://www.python.org/downloads/)
 2. Clone repository:
+
         git clone https://github.com/egarcia410/digitalCraft.git
+
 3. Change directory:
+
         cd /digitalCraft/Week2/3-phoneBookApp
+
 4. Run program:
+
         python3 index.py
 
 You will write a command line program to manage a phone book. When you start the phonebook.py program, it will print out a menu and ask the user to enter a choice:
