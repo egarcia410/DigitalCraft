@@ -1,5 +1,14 @@
 # Write a Phone Book App
 
+### Getting Started
+1. Install [Python](https://www.python.org/downloads/)
+2. Clone repository:
+        git clone https://github.com/egarcia410/digitalCraft.git
+3. Change directory:
+        cd /digitalCraft/Week2/3-phoneBookApp
+4. Run program:
+        python3 index.py
+
 You will write a command line program to manage a phone book. When you start the phonebook.py program, it will print out a menu and ask the user to enter a choice:
 ```
 $ python phonebook.py
@@ -15,8 +24,8 @@ What do you want to do (1-5)?
 1. If they choose to look up an entry, you will ask them for the person's name, and then look up the person's phone number by the given name and print it to the screen.
 2. If they choose to set an entry, you will prompt them for the person's name and the person's phone number,
 3. If they choose to delete an entry, you will prompt them for the person's name and delete the given person's entry.
-4. 5. If they choose to list all entries, you will go through all entries in the dictionary and print each out to the terminal.
-If they choose to quit, end the program.
+4. If they choose to list all entries, you will go through all entries in the dictionary and print each out to the terminal.
+5. If they choose to quit, end the program.
 Example session:
 ```
 $ python phonebook.py
@@ -106,7 +115,8 @@ The problem with the above program you've written is that all the information yo
 
 When they choose to save entries, you save the dictionary that you are using to store all of the information into a file using the pickle module. Example code for saving a dictionary into a file:
 
-* import json was used in this project
+*import json was used in this project
+
 ```
 import pickle
 ...
