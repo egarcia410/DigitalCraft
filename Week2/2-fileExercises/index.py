@@ -3,7 +3,7 @@
 #     """Exercise 1: User inputs file name and read contents of file"""
 #     response = input('Filename: ')
 #     fname = response + '.txt'
-#     with open(fname, 'w+') as f:
+#     with open(fname, 'w') as f:
 #         f.write('This is the first line of the file.\n')
 #         f.write('Second line of the file\n')
 #     with open(fname, 'r') as f:
