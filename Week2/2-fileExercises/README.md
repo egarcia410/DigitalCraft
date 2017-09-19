@@ -27,6 +27,9 @@ Example Format:
   ]
 }
 ```
+
+![alt text](./img/img1.png)
+
 ### Bonus: Crash Test
 
 Write a program that writes to an in memory file and keeps track of how many characters/bytes were added and prints that information to the screen. Continue adding characters until your program dies.
