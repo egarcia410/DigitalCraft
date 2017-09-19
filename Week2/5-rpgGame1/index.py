@@ -29,9 +29,6 @@ class Goblin(Character):
     def __init__(self):
         super().__init__(6, 4)
 
-hero = Hero()
-goblin = Goblin()
-
 def main(hero, goblin):
     while goblin.alive() and hero.alive():
         print("You have {} health and {} power.".format(hero.health, hero.power))
@@ -62,5 +59,6 @@ def main(hero, goblin):
             if hero.health <= 0:
                 print("You are dead.")
 
-
+hero = Hero()
+goblin = Goblin()
 main(hero, goblin)
