@@ -16,14 +16,17 @@ class Character():
 
     def decreaseHealth(self, hitDamage):
         self.health = self.health - hitDamage
-        return self.health
 
     def alive(self):
-        return self.health > 0  
+        return self.health > 0
 
 class Hero(Character):
     def __init__(self):
         super().__init__(10, 5)
+
+    def printStatus(self, enemy):
+        print("You have {} health and {} power.".format(self.health, self.power))
+        print("The goblin has {} health and {} power.".format(enemy.health, enemy.power))
 
 class Goblin(Character):
     def __init__(self):
@@ -31,8 +34,7 @@ class Goblin(Character):
 
 def main(hero, goblin):
     while goblin.alive() and hero.alive():
-        print("You have {} health and {} power.".format(hero.health, hero.power))
-        print("The goblin has {} health and {} power.".format(goblin.health, goblin.power))
+        hero.printStatus(goblin)
         print()
         print("What do you want to do?")
         print("1. fight goblin")
