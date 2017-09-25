@@ -13,7 +13,7 @@ class Character():
         self.coins = 0
         self.level = 1
         self.exp = 0
-        self.backpack = {}
+        self.inventory = {}
         self.reward = random.randint(2, 12)
 
     def meleeAttack(self, enemy):
@@ -185,6 +185,56 @@ class Character():
         self.exp += 1
         print('1 EXP gained')
 
+    def addItemInventory(self, item):
+        if self.coins - item.cost < 0:
+            print('Not enough coins!')
+            return
+        self.coins = self.coins - item.cost
+        if item in self.inventory:
+            self.inventory[item] += 1
+        else:
+            self.inventory[item] = 1
+        print('{} has been added to Inventory, {} total'.format(item.name, self.inventory[item]))
+
+    def useItem(self, enemy):
+        print('=====================')
+        print('     Choose Item     ')
+        print('=====================')
+        while True:
+            if len(self.inventory) == 0:
+                print('No items in Inventory')
+                return
+            items = {}
+            for index, key in self.inventory:
+                items[index+1] = key
+                print('{}. {}, {} total'.format(index+1, key, self.inventory[key]))
+            response = 0
+            try:
+                response = int(input("> "))
+            except ValueError:
+                print('Invalid Command')
+                continue
+            if items[response].effect == 'health':
+                self.health += items[response].amount
+                print('Health has increased')
+            elif items[response].effect == 'magic':
+                self.magic += items[response].amount
+                print('Magic has increased')
+            elif items[response].effect == 'evade':
+                self.evade += items[response].amount
+                print('Evade Attribute has increased')
+            elif items[response].effect == 'strength':
+                self.strength += items[response].amount
+                print('Strength Attribute has increased')
+            elif items[response].effect == 'element':
+                self.element += items[response].amount
+                print('Changed Element Type')   
+
+# ########################################################################
+            # Fix: Using items in battle!!!
+# ########################################################################
+
+
 class WhiteWalker(Character):
     """White Walker with Freeze and Ice Burn special ability"""
     def __init__(self):
@@ -291,26 +341,92 @@ class Battle():
                     if hero.magicAttack(enemy):
                         enemy.meleeAttack(hero)
             elif response == 3:
-                enemy.attack(hero)
-                pass
+                hero.isNegEffects(enemy)
+                hero.isPosEffects(enemy)
+                enemy.meleeAttack(hero)
             elif response == 4:
                 if hero.flee():
                     return 'flee'
                 enemy.meleeAttack(hero)
             elif response == 5:
-                # Work on at a later date
-                pass
+                hero.useItem(enemy)
         if hero.alive():
             return True
         else:
             return False
 
+########################## Items ##################################
+class BasePotion():
+    def __init__(self, name, effect, amount, duration, cost):
+        self.name = name
+        self.effect = effect
+        self.amount = amount
+        self.duration = duration
+        self.cost = cost
+
+class MagicPotion(BasePotion):
+    def __init__(self):
+        super().__init__('Magic Potion', 'magic', 10, 1, 10)
+
+class EvadePotion(BasePotion):
+    def __init__(self):
+        super().__init__('Evade Potion', 'evade', 5, 1, 50)
+
+class StrengthPotion(BasePotion):
+    def __init__(self):
+        super().__init__('Strength Potion', 'strength', 5, 1, 50)
+
+class HealthPotion(BasePotion):
+    def __init__(self):
+        super().__init__('Health Potion', 'health', 10, 1, 15)
+
+class FreezePotion(BasePotion):
+    def __init__(self):
+        super().__init__('Freeze Potion', 'frozen', 0, 3, 30)
+
+class ElementChange(BasePotion):
+    def __init__(self):
+        super().__init__('Element Change', 'element', 0, 3, 80)
+
+########################## Store ##################################
+class Store():
+    def startShop(self, hero):
+        print("=====================")
+        print("        Shop         ")
+        print("=====================")
+        while shopping:
+            items = [MagicPotion, HealthPotion, EvadePotion, StrengthPotion, ElementChange, FreezePotion]
+            print('You have {} coins'.format(hero.coins))
+            for index, item in enumerate(items):
+                print('{}. {}, Cost: {}'.format(index+1, item().name, item().cost))
+            print(str(len(items) + 1) + ". Exit Shop")
+            print('What item would you like to buy?')
+            response = 0
+            try:
+                response = int(input("> "))
+            except ValueError:
+                print('Invalid Command')
+                continue
+            if response == 1:
+                hero.addItemInventory(items[1-1]())
+            elif response == 2:
+                hero.addItemInventory(items[2-1]())
+            elif response == 3:
+                hero.addItemInventory(items[3-1]())
+            elif response == 4:
+                hero.addItemInventory(items[4-1]())
+            elif response == 5:
+                hero.addItemInventory(items[5-1]())
+            elif response == 6:
+                hero.addItemInventory(items[6-1]())
+            elif response == 7:
+                return
+
 ######################### Start Game ##################################
 if __name__ == "__main__":
     hero = Saiyan()
     battleGround = Battle()
-    # shopping = Store()
-
+    shopping = Store()
 
 ######################### Main Menu ###############################
 while True:
@@ -336,14 +452,14 @@ while True:
             if not heroWon:
                 print("YOU LOSE!")
                 exit(0)
-    # elif response == 2:
-
+    elif response == 2:
+        shopping.startShop(hero)
     else:
         print("YOU WIN!")
 
-########################## Store ##################################
-# class Store()
-#     def shop(self):
-#         self.items = [MagicPotion, HealthPotion, EvadePotion, StrengthPotion, ElementChange, FreezePotion]
+
+
+
+
 
 
