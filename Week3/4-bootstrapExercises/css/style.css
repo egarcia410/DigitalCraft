@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+nav {
+    background-color: pink;
+    border-bottom: 2px solid black    
+}
+
+header {
+    background-color: green;
+    border-bottom: 2px solid black
+}
+
+main {
+    background-color: blue;
+    border-bottom: 2px solid black    
+}
+
+.img {
+    background-color: brown;
+    border-bottom: 2px solid black        
+}
+
+footer {
+    background-color: red;
+}
+
+.col {
+    text-align: center;
+    margin: 0;
+}
+
+/* Nav Bar */
+.company {
+    text-align: left;
+}
+
+.navOptions {
+    margin-top: 15px;
+}
+
+.navOptions li {
+    border-left: 2px solid black;
+}
+
+.menu {
+    list-style-type: none;
+}
+
+/* Header */
+.head {
+    margin: 50px;
+}
+
+/* Main */
+.content {
+    padding: 30px;
+}
+
+/* Images */
+.img {
+    padding: 40px;
+}
+
+
+/* Footer  */
+footer {
+    padding: 20px;
+}
