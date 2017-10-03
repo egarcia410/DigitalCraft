@@ -58,8 +58,10 @@
 
 ## Setting Up Project File
 1. Install Dependencies inside Virtualenv:
+
         $ pip3 install boto3
         $ pip3 install python-dotenv
+
 2. Configure project file with code below:
 
 ```python
@@ -104,6 +106,7 @@ SES_CLIENT = boto3.client(
 
 ## Setting Up Dokku
 1. Insert AWS credentials into Dokku
+
         dokku config:set myproject AWS_ACCESS_KEY=INSERT_ACCESS_KEY
         dokku config:set myproject AWS_SECRET_KEY=INSERT_SECRET_KEY
 
