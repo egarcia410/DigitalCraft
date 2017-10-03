@@ -3,6 +3,7 @@
 ## Create Database
 
 Create a database, call it `restaurant`. In your terminal:
+        
         $ createdb restaurant
 
 ## Create Database Table
