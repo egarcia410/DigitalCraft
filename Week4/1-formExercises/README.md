@@ -68,6 +68,8 @@
 import os
 import boto3
 
+from dotenv import load_dotenv
+
 load_dotenv('.env')
 
 SES_CLIENT = boto3.client(
