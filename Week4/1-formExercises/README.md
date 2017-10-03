@@ -79,6 +79,7 @@ SES_CLIENT = boto3.client(
   region_name="us-west-2"
 )
 ```
+    * May have to update `region_name`
 
 3. Inside Handler for sending email, insert post method below:
 ```python
