@@ -81,7 +81,12 @@ SES_CLIENT = boto3.client(
 ```
 * May have to update `region_name`
 
-3. Inside Handler for sending email, insert post method below:
+3. Insert Credentials into `.env` file
+
+    AWS_ACCESS_KEY=INSERT_ACCESS_KEY
+    AWS_SECRET_KEY=INSERT_SECRET_KEY
+
+4. Inside Handler for sending email, insert post method below:
 ```python
     def post(self):
         name = self.get_body_argument('name')
