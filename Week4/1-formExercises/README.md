@@ -113,7 +113,7 @@ SES_CLIENT = boto3.client(
         dokku config:set myproject AWS_ACCESS_KEY=INSERT_ACCESS_KEY
         dokku config:set myproject AWS_SECRET_KEY=INSERT_SECRET_KEY
 
-### Contact Form
+## Contact Form
 
 Create a "Contact Me" form on your site that accepts inputs like name, email, message, etc. On your backend when you recieve this data send it to yourself with [Amazon SES](https://aws.amazon.com/ses/).
 
@@ -123,7 +123,7 @@ Use the [Boto3](http://boto3.readthedocs.io/en/latest/) Library library to send 
 2. [send_email](http://boto3.readthedocs.io/en/latest/reference/services/ses.html#SES.Client.send_email)
 
 
-### CLI to Web
+## CLI to Web
 
 Convert one or more of your previous exercises from Python Part 1 to a web form. Examples to convert:
 
@@ -132,7 +132,7 @@ Convert one or more of your previous exercises from Python Part 1 to a web form.
 3. Tip Calculator
 4. How many coins
 
-### Bonus: Timezone Converter
+## Bonus: Timezone Converter
 
 Create a form that allows you input a datetime and select an input timezone and an output timezone. When the form is submitted, it should respond with the converted datetime.
 
