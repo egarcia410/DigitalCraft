@@ -116,8 +116,8 @@ Create a "Contact Me" form on your site that accepts inputs like name, email, me
 
 Use the [Boto3](http://boto3.readthedocs.io/en/latest/) Library library to send email with Amazon SES.
 
-[SES](http://boto3.readthedocs.io/en/latest/reference/services/ses.html)
-[send_email](http://boto3.readthedocs.io/en/latest/reference/services/ses.html#SES.Client.send_email)
+1. [SES](http://boto3.readthedocs.io/en/latest/reference/services/ses.html)
+2. [send_email](http://boto3.readthedocs.io/en/latest/reference/services/ses.html#SES.Client.send_email)
 
 
 ### CLI to Web
