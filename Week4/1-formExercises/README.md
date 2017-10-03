@@ -124,10 +124,10 @@ Use the [Boto3](http://boto3.readthedocs.io/en/latest/) Library library to send 
 
 Convert one or more of your previous exercises from Python Part 1 to a web form. Examples to convert:
 
-Work or Sleep In
-[Celsius to Fahrenheit](https://github.com/egarcia410/temp-converter)
-Tip Calculator
-How many coins
+1. Work or Sleep In
+2. [Celsius to Fahrenheit](https://github.com/egarcia410/temp-converter)
+3. Tip Calculator
+4. How many coins
 
 ### Bonus: Timezone Converter
 
