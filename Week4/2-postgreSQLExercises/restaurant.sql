@@ -167,3 +167,36 @@ WHERE prev_time < (current_date - 7);
 SELECT name FROM restaurant 
 WHERE prev_time < (current_date - 7) AND stars = 5;
 
+--
+
+SELECT name, distance FROM restaurant 
+ORDER BY distance;
+
+--
+
+SELECT name, stars FROM restaurant
+ORDER BY stars DESC LIMIT 2;
+
+--
+
+SELECT name, stars, distance FROM restaurant
+WHERE distance < 2
+ORDER BY stars DESC LIMIT 2;
+
+--
+
+SELECT COUNT(*) FROM restaurant;
+
+--
+
+SELECT category, COUNT(category) as categoryNum FROM restaurant
+GROUP BY category;
+
+--
+
+SELECT AVG(stars) FROM restaurant;
+
+--
+
+SELECT category, max(stars) FROM restaurant
+GROUP BY category;
