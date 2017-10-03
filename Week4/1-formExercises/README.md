@@ -83,8 +83,8 @@ SES_CLIENT = boto3.client(
 
 3. Insert Credentials into `.env` file
 
-    AWS_ACCESS_KEY=INSERT_ACCESS_KEY
-    AWS_SECRET_KEY=INSERT_SECRET_KEY
+        AWS_ACCESS_KEY=INSERT_ACCESS_KEY
+        AWS_SECRET_KEY=INSERT_SECRET_KEY
 
 4. Inside Handler for sending email, insert post method below:
 ```python
