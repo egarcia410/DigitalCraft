@@ -198,7 +198,6 @@ function cipher(word, offset){
             
         }
         letterToNum = (word).charCodeAt(i);
-        console.log(letterToNum)
         // if letterToNum is an uppercase letter
         if (letterToNum >= 65 && letterToNum <= 90){
             letterToNumOffset = letterToNum - offset;
@@ -217,8 +216,7 @@ function cipher(word, offset){
         else if (letterToNum >= 97 && letterToNum <= 122){
             letterToNumOffset = letterToNum - offset;
             if (letterToNumOffset < 71){
-                console.log(letterToNumOffset, 'INSIDE 71')
-                remainder = offset % 26;
+\                remainder = offset % 26;
                 letterToNum = letterToNum - remainder + 26;
             }
             else if (letterToNumOffset >= 97) {
