@@ -216,7 +216,7 @@ function cipher(word, offset){
         else if (letterToNum >= 97 && letterToNum <= 122){
             letterToNumOffset = letterToNum - offset;
             if (letterToNumOffset < 71){
-\                remainder = offset % 26;
+                remainder = offset % 26;
                 letterToNum = letterToNum - remainder + 26;
             }
             else if (letterToNumOffset >= 97) {
