@@ -69,5 +69,6 @@ var options = {
 request(options, function(err, response, imageData) {
   // save image data and resize
 });
-``
+```
+
 **Hint 2: Use a module like [sharp](http://sharp.dimens.io/en/stable/) to resize the image.**
