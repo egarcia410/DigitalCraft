@@ -12,23 +12,23 @@
 // console.log(_.shuffle(numbers));
 
 // Bonus: Request and Cheerio
-// const cheerio = require('cheerio');
-// const request = require('request');
+const cheerio = require('cheerio');
+const request = require('request');
 
-// const $ = cheerio.load(
-//     request('https://www.npmjs.com/', function (error, response, html) {
-//         const $ = cheerio.load(html);
-//         const packageArr = [];
-//         $("h3 > a.type-neutral-1").each(function(i, elem){
-//             packageArr[i] = $(this).text();
-//         });
-//         console.log(packageArr);
-//     })
-// );
+const $ = cheerio.load(
+    request('https://www.npmjs.com/', function (error, response, html) {
+        const $ = cheerio.load(html);
+        const packageArr = [];
+        $("h3 > a.type-neutral-1").each(function(i, elem){
+            packageArr[i] = $(this).text();
+        });
+        console.log(packageArr);
+    })
+);
 
 // Bonus 2: Any module
-const cows = require('cows');
+// const cows = require('cows');
 
-for (var i = 0; i < cows().length; i++){
-    console.log(cows()[i]);
-}
+// for (var i = 0; i < cows().length; i++){
+//     console.log(cows()[i]);
+// }
