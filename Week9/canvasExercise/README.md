@@ -24,5 +24,7 @@
 
         $ nodemon server.js
 
+6. In browser, go to `http://localhost:8000/`
+
 
 ![bullseye](./public/img/img.png)
